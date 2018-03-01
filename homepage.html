@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app=myApp>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Home</title>
+  <script src=" http://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+</head>
+<body ng-controller="FinanceController">
+  <header>
+    <h1 class="display-3 text-center my-4 ">Neibr</h1>
+    <h3 class="text-center text-capitalize"><small class="text-muted">Powered by Angular Bootstrap Jquery Php MySql</small></h3>
+      <hr  />
+  </header>
+
+    <!--####################START HERE######################-->
+     <h4 class="display-4">Your Salary?</h4>
+     <input type="text" ng-model="salary">
+     <h4 class="display-4">How much should you invest in shopping?</h4>
+     <input type="text" ng-model="percentage">%
+     <h3>The amount to be spent on gadgets will be:</h3>
+     <span>{{result()}}</span>
+     <script src="js/app.js"></script>
+     <script src="js/controllers.js"></script>
+    <label>Name:</label>
+    <input type="text" ng-model="name" placeholder="Enter a name" />
+    <h2 class="display-4 text-capitalize">hello {{name }}! The current date/time is <span>{{now | date:'medium'}}</h2>
+    <h5 class="display-4"><a href='/newupdate.zip'>Download here</a></h5>
+    <a href="register.php"><h1 class="display-2">Register</h1></a>
+    <a href="login.php"><h1 class="display-2">login</h1></a>
+    <a href="home.php"><h1 class="display-2">homeprofile</h1></a>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
